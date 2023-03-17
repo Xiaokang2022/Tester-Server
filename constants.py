@@ -28,3 +28,29 @@ MSG = """
     <h1 style="text-align: center;">%s</h1>
     <p style="text-align: center;">若您未请求过验证码，那或许是他人误填了您的邮箱，请您忽略这封邮件</p>
 </div>"""  # 信息基本格式
+
+# 用户初始化数据
+
+INIT_DATA = {
+    'nickname': None,
+    'mail': None,
+    'password': None,
+    'id': None
+}
+
+# 命令行帮助
+
+HELP = """
+
+%s -- Python习题测试服务器
+==================================
+
+Command
+-------
+
+? | help                -> 命令帮助文档
+quit | exit | shutdown  -> 关闭服务器
+users                   -> 临时连接
+countdown               -> 计时器数量（可用验证码数量）
+
+如果你想终止服务器，请输入“quit”、“exit”或者“shutdown”""" % NAME
